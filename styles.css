@@ -1,0 +1,264 @@
+/* css to style my nav bar */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  /* font-size: 62.5%; 10px of 16px * 100% */
+  font-size: 30px;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(119, 11, 119);
+}
+header {
+  background-color: rgb(46, 2, 46);
+}
+nav {
+  width: 80%;
+  margin: 10px auto;
+  padding: 28px;
+  border-radius: 10px;
+}
+
+.master-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+.master-container .formContainer {
+  /* display: inline-block; */
+  border: 2px solid #fff;
+  border-radius: 10px;
+  width: 50%;
+  color: #fff;
+  background-color: rgb(46, 2, 46);
+  box-shadow: 10px 20px 30px rgb(46, 2, 46);
+}
+
+.master-container #members-list {
+  width: 50%;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background-color: rgb(46, 2, 46);
+  box-shadow: 10px 20px 30px rgb(46, 2, 46);
+}
+h1 {
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+  font-family: sans-serif;
+}
+
+.mobile-menu-icon {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 1440px) {
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .master-container {
+    padding: 10px;
+  }
+  #members-list {
+    padding: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .master-container {
+    flex-direction: column;
+    width: 95%;
+  }
+  .master-container .formContainer {
+    width: 100%;
+  }
+  .master-container #members-list {
+    overflow-x: scroll;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  table#userTable {
+    width: 100% !important;
+  }
+}
+
+/* @media (max-width: 2400px) {
+	.mobile-menu-icon {
+		display: block;
+	}
+	.menu {
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		right: 0;
+		background-color: #333;
+	}
+	.menu li {
+		margin: 10px 0;
+	}
+	.menu li a {
+		padding: 10px 20px;
+	}
+	.menu.active {
+		display: flex;
+	}
+} */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+/* .menu li {
+  display: flex;
+  justify-content: space-around;
+
+  justify-content: space-around; 
+
+  gap: 30rem;
+} */
+
+.menu li a {
+  /* gap: 30rem; */
+  padding: 20px 30px;
+  border-radius: 10px;
+  /* gap: 3rem; */
+  background-color: rgb(119, 11, 119);
+  font-size: 36px;
+  /* margin-right: 15rem; */
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+.menu li a:active {
+  background-color: #fff;
+}
+
+.menu li a:hover {
+  background-color: #fff;
+  color: purple;
+  font-size: 36px;
+}
+
+.t,
+.y {
+  color: purple;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+label {
+  font-weight: bold;
+  margin: 10px;
+  align-self: flex-start;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 20px;
+  margin: 30px 150px;
+  font-size: 30px;
+  /* width: 300px; */
+  width: 90%;
+  border-radius: 5px;
+
+  /* padding: 10px 15px; */
+}
+input[type="text"]:focus {
+  outline: none;
+}
+input[type="number"]:focus {
+  outline: none;
+}
+select:focus {
+  outline: 1px solid green;
+}
+
+#submitBtn {
+  padding: 25px;
+  border-radius: 10px;
+  font-size: 30px;
+  background-color: #837f7f;
+  color: #fff;
+  font-weight: 800;
+  width: 90%;
+}
+#submitBtn:hover {
+  background-color: green;
+  transition: 0.5s ease-in-out;
+}
+
+select[multiple] {
+  height: 80px;
+}
+
+button {
+  padding: 25px;
+  /* margin: 10px 250px; */
+  width: 250px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: red;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+#userTable {
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 100%;
+}
+
+#userTable td,
+#userTable th {
+  padding: 10px;
+}
+
+.title {
+  color: #ddd;
+  text-align: center;
+  border-radius: 6px;
+}
+.title:hover {
+  background-color: brown;
+}

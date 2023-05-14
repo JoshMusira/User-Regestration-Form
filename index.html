@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Registration Management System</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+    <header class="hearder">
+        
+		<nav>
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Update</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Read</a></li>
+				
+			</ul>
+		</nav>
+    </header>
+	<h1>User Registration Management System</h1>
+	<div class="master-container">
+		<div class="formContainer">
+			<form id="userForm">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name here ..." required>
+		
+				<label for="id">ID Number:</label>
+				<input type="number" id="id" name="id" placeholder="Enter your ID Number here ..." required>
+		
+				<label for="country">Country:</label>
+				<select id="country" name="country">
+					<option value="">Please select a country</option>
+					
+					<option value="Australia">Uganda</option>
+					<option value="Australia">Argentina </option>
+					<option value="Australia">Brazil</option>
+					<option value="Australia">Mexico</option>
+				</select>
+		
+				<label for="languages">Languages Spoken:</label>
+				<select id="languages" name="languages">
+					<option value="">Please select a language</option>
+					<option value="English">English</option>
+					<option value="Spanish">Swahili</option>
+					<option value="French">French</option>
+					<option value="German">German</option>
+				</select>
+				
+				<input type="submit" id="submitBtn" value="Add User">
+				<!-- <button type="submit" id="submitBtn" >Add User</button> -->
+			
+			</form>
+		</div>
+		
+	
+		<div id="members-list">
+			<h2 class="title"> Registered members </h2>
+			<table id="userTable">
+				<thead>
+					<tr>
+						<th>Name</th>
+						 <th>ID Number</th>
+						 <th>Country</th>
+						 <th>Languages </th>
+						 <th>Action</th>
+					</tr>
+				   
+				</thead>
+			</table>
+		</div>
+	</div>
+
+	
+</body>
+</html>
