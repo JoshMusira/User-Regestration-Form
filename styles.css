@@ -5,8 +5,8 @@
   margin: 0;
 }
 html {
-  /* font-size: 62.5%; 10px of 16px * 100% */
-  font-size: 10px;
+  font-size: 62.5%; 
+/*   font-size: 10px; */
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
